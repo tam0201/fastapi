@@ -6,7 +6,7 @@ import os
 port = os.environ["PORT"]
 app=FastAPI()
 
-app.include_router(kubeflow_router.router, prefix="/kubeflow", tags=["kubeflow"])
+app.include_router(kubeflow_router.router, prefix="/kubeflow", tags=["kubeflow API"])
 
 
 if __name__=='__main__':
